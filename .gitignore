@@ -1,0 +1,14 @@
+dataset/
+ml-service/.venv/
+frontend/node_modules/
+frontend/.next/
+
+.env
+.env.*
+
+__pycache__/
+*.pyc
+
+models/*.keras
+*.h5
+*.ckpt
