@@ -1,6 +1,8 @@
 # Dataset
 dataset/
 
+food101/
+
 # Python
 ml-service/.venv/
 __pycache__/
