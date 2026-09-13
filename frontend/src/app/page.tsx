@@ -299,7 +299,7 @@ export default function Home() {
                       {formatFoodName(result.food)}
                     </span>
                   </span>
-                  <span>{(result.confidence * 100).toFixed(0)}%</span>
+                  <span>{(result.confidence * 100).toFixed(2)}%</span>
                 </div>
               </div>
             ) : (
@@ -319,7 +319,7 @@ export default function Home() {
                   />
                   <span className="text-xs font-medium text-[#5B584F]">
                     {confidenceMeta(result.confidence).label} ·{" "}
-                    {(result.confidence * 100).toFixed(0)}%
+                    {(result.confidence * 100).toFixed(2)}%
                   </span>
                 </div>
 
