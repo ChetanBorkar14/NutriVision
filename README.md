@@ -328,6 +328,16 @@ The same formula is used for:
 - Protein
 - Carbohydrates
 - Fat
+- Fiber
+- Sugars
+- Saturated fat
+- Sodium
+
+All nutrition columns in `nutrition.csv` are reference values per 100 g.
+The API scales each value to the selected portion; sodium is reported in mg
+and all `_g` values are reported in grams.
+The same file contains a general food note and balance tip for each supported
+class. These are informational, not personalized medical or dietary advice.
 
 > Nutrition values and portion weights are reference/demo estimates. Actual values vary depending on ingredients, recipes, cooking methods, and serving size.
 
@@ -364,11 +374,19 @@ Example response:
   "low_confidence": false,
   "portion": "medium",
   "weight_g": 180,
+  "insights": {
+    "food_note": "A hamburger can provide protein; toppings, bun, and preparation affect sodium, saturated fat, and calories.",
+    "balance_tip": "Add vegetables and choose sides and toppings based on your preferences and needs."
+  },
   "nutrition": {
     "calories": 531,
     "protein_g": 30.6,
     "carbs_g": 43.2,
-    "fat_g": 25.2
+    "fat_g": 25.2,
+    "fiber_g": 2.34,
+    "sugars_g": 9.0,
+    "saturated_fat_g": 9.9,
+    "sodium_mg": 900
   }
 }
 ```

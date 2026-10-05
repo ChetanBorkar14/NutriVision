@@ -7,6 +7,10 @@ type Nutrition = {
   protein_g: number;
   carbs_g: number;
   fat_g: number;
+  fiber_g: number;
+  sugars_g: number;
+  saturated_fat_g: number;
+  sodium_mg: number;
 };
 
 type PredictionResult = {
@@ -15,6 +19,10 @@ type PredictionResult = {
   low_confidence: boolean;
   portion: string;
   weight_g: number;
+  insights: {
+    food_note: string;
+    balance_tip: string;
+  };
   nutrition: Nutrition;
 };
 
@@ -354,7 +362,33 @@ export default function Home() {
                   />
                   <MacroRow label="Carbs" value={result.nutrition.carbs_g} />
                   <MacroRow label="Fat" value={result.nutrition.fat_g} />
+                  <MacroRow label="Fiber" value={result.nutrition.fiber_g} />
+                  <MacroRow label="Sugars" value={result.nutrition.sugars_g} />
+                  <MacroRow
+                    label="Saturated fat"
+                    value={result.nutrition.saturated_fat_g}
+                  />
+                  <MacroRow
+                    label="Sodium"
+                    value={result.nutrition.sodium_mg}
+                    unit="mg"
+                  />
                 </div>
+
+                <section className="mt-5 rounded-xl bg-[#FAF9F5] p-4">
+                  <h3 className="text-sm font-semibold text-[#1C1B18]">
+                    Food insights
+                  </h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[#5B584F]">
+                    {result.insights.food_note}
+                  </p>
+                  <p className="mt-3 text-sm leading-relaxed text-[#5B584F]">
+                    <span className="font-semibold text-[#1C1B18]">
+                      Balance tip:{" "}
+                    </span>
+                    {result.insights.balance_tip}
+                  </p>
+                </section>
               </div>
             )}
           </div>
@@ -371,12 +405,20 @@ export default function Home() {
   );
 }
 
-function MacroRow({ label, value }: { label: string; value: number }) {
+function MacroRow({
+  label,
+  value,
+  unit = "g",
+}: {
+  label: string;
+  value: number;
+  unit?: "g" | "mg";
+}) {
   return (
     <div className="flex items-center justify-between py-2.5 text-sm">
       <span className="text-[#5B584F]">{label}</span>
       <span className="font-mono font-semibold tabular-nums text-[#1C1B18]">
-        {formatNumber(value)} g
+        {formatNumber(value)} {unit}
       </span>
     </div>
   );

@@ -1,16 +1,16 @@
-food,calories,protein_g,carbs_g,fat_g
-apple_pie,237,2.4,34.0,11.0
-cheesecake,321,5.5,25.5,22.5
-chicken_curry,180,15.0,8.0,10.0
-chicken_wings,203,30.5,0.0,8.1
-dumplings,175,7.0,25.0,5.0
-french_fries,312,3.4,41.0,14.7
-fried_rice,163,3.5,25.0,5.5
-grilled_cheese_sandwich,350,13.0,28.0,20.0
-hamburger,295,17.0,24.0,14.0
-ice_cream,207,3.5,24.0,11.0
-omelette,154,10.6,0.7,11.0
-pancakes,227,6.4,28.0,10.0
-pizza,266,11.0,33.0,10.0
-samosa,262,5.0,32.0,12.0
-spring_rolls,200,5.0,25.0,9.0
+food,calories,protein_g,carbs_g,fat_g,fiber_g,sugars_g,saturated_fat_g,sodium_mg,food_note,balance_tip
+apple_pie,237,2.4,34.0,11.0,1.6,14.0,4.5,300,"A dessert that can contribute sugars and saturated fat; the recipe and serving size make a difference.","Enjoy a portion that suits you, and pair it with a meal or snack that includes fruit or another fiber-rich food."
+cheesecake,321,5.5,25.5,22.5,0.5,21.0,13.0,280,"A rich dessert that can be relatively high in sugars and saturated fat.","Consider a smaller slice if you want a lighter dessert; overall eating patterns matter more than one food."
+chicken_curry,180,15.0,8.0,10.0,1.2,2.0,3.0,450,"Chicken curry can provide protein; ingredients, cooking fat, and salt vary widely by recipe.","Add vegetables and choose a portion of rice or another grain that fits your meal."
+chicken_wings,203,30.5,0.0,8.1,0.0,0.0,2.3,600,"Chicken wings can provide protein, while sauces and seasoning may add sodium and sugar.","Serve with vegetables, and check the sauce or seasoning if you are watching sodium."
+dumplings,175,7.0,25.0,5.0,1.5,1.5,1.0,450,"Dumplings provide carbohydrates and may contain protein or vegetables depending on their filling.","Pair them with vegetables; fillings, dipping sauces, and preparation methods change the nutrition."
+french_fries,312,3.4,41.0,14.7,3.8,0.3,2.3,210,"Fries are a potato side, commonly cooked with added oil; values depend on portion and preparation.","Try a moderate portion alongside a meal with vegetables and a protein source."
+fried_rice,163,3.5,25.0,5.5,1.5,1.5,1.0,400,"Fried rice provides carbohydrates; added oil, sauces, vegetables, and protein vary by recipe.","Add vegetables and a protein source, and adjust salty sauces to your preference."
+grilled_cheese_sandwich,350,13.0,28.0,20.0,1.3,3.0,10.0,700,"A filling sandwich that can be relatively high in saturated fat and sodium, depending on the bread and cheese.","Pair it with vegetables or fruit; ingredients and portion size affect the overall meal."
+hamburger,295,17.0,24.0,14.0,1.3,5.0,5.5,500,"A hamburger can provide protein; toppings, bun, and preparation affect sodium, saturated fat, and calories.","Add vegetables and choose sides and toppings based on your preferences and needs."
+ice_cream,207,3.5,24.0,11.0,0.0,21.0,7.0,80,"A sweet dessert that can contribute sugars and saturated fat.","Enjoy a portion that works for you; you can pair it with fruit if you want."
+omelette,154,10.6,0.7,11.0,0.1,0.5,3.2,350,"An omelette can provide protein; added cheese, fillings, cooking fat, and salt change its nutrition.","Add vegetables or serve with a fiber-rich side for a more varied meal."
+pancakes,227,6.4,28.0,10.0,1.5,7.0,1.5,450,"Pancakes provide carbohydrates; toppings such as syrup, butter, and spreads can add sugars or fat.","Try fruit as a topping and include a protein source if you want a more filling meal."
+pizza,266,11.0,33.0,10.0,2.3,3.0,4.5,600,"Pizza provides carbohydrates and some protein; cheese and toppings can make sodium and saturated fat add up.","Add a salad or vegetables, and choose a portion that suits your appetite."
+samosa,262,5.0,32.0,12.0,3.0,2.0,2.5,450,"Samosas are often fried pastries; fillings and cooking methods affect their fat, sodium, and fiber.","Pair with vegetables or another fiber-rich food, and keep the portion in mind."
+spring_rolls,200,5.0,25.0,9.0,2.0,3.0,1.5,500,"Spring rolls vary by filling and preparation; fried versions and dipping sauces may add fat or sodium.","Choose fillings and preparation you enjoy, and pair them with vegetables if they are not already included."

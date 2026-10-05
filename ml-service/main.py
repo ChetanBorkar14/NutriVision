@@ -182,6 +182,10 @@ async def predict(
     protein = float(nutrition_row["protein_g"]) * multiplier
     carbs = float(nutrition_row["carbs_g"]) * multiplier
     fat = float(nutrition_row["fat_g"]) * multiplier
+    fiber = float(nutrition_row["fiber_g"]) * multiplier
+    sugars = float(nutrition_row["sugars_g"]) * multiplier
+    saturated_fat = float(nutrition_row["saturated_fat_g"]) * multiplier
+    sodium = float(nutrition_row["sodium_mg"]) * multiplier
 
     # --------------------------------------------------
     # Response
@@ -193,10 +197,18 @@ async def predict(
     "low_confidence": low_confidence,
     "portion": portion,
     "weight_g": weight_g,
+    "insights": {
+        "food_note": nutrition_row["food_note"],
+        "balance_tip": nutrition_row["balance_tip"]
+    },
     "nutrition": {
         "calories": round(calories, 2),
         "protein_g": round(protein, 2),
         "carbs_g": round(carbs, 2),
-        "fat_g": round(fat, 2)
+        "fat_g": round(fat, 2),
+        "fiber_g": round(fiber, 2),
+        "sugars_g": round(sugars, 2),
+        "saturated_fat_g": round(saturated_fat, 2),
+        "sodium_mg": round(sodium, 2)
     }
 }
