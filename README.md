@@ -39,6 +39,28 @@ The application combines a **MobileNetV2 transfer-learning model**, a **Python/F
 
 ---
 
+## 🖼️ Application Screenshots
+
+### Upload a food image
+
+Choose a JPG or PNG image, select a portion size, and analyze it.
+
+<p align="center">
+  <img src="images/image1.png" alt="NutriVision landing screen with the food image upload area and portion size options" width="85%">
+</p>
+
+### Example predictions
+
+The hamburger image is classified correctly with **97.86% confidence**. The wallpaper is not a supported food category, but the closed-set classifier still returns its best guess, **Apple Pie**, at **39.09% confidence** and displays a low-confidence warning.
+
+<p align="center">
+  <img src="images/image2.png" alt="Hamburger classified correctly with 97.86% confidence and nutrition information" width="45%">
+  &nbsp;
+  <img src="images/image3.png" alt="Wallpaper image flagged as uncertain, with Apple Pie as the best guess at 39.09% confidence" width="45%">
+</p>
+
+---
+
 ## 🏗️ System Architecture
 
 ```text
@@ -465,6 +487,11 @@ NutriVision/
 ├── nutrition/
 │   ├── nutrition.csv
 │   └── portion.csv
+│
+├── images/
+│   ├── image1.png
+│   ├── image2.png
+│   └── image3.png
 │
 ├── notebooks/
 │
